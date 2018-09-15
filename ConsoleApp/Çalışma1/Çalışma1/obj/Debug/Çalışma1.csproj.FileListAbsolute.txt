@@ -1,0 +1,7 @@
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\bin\Debug\Çalışma1.exe.config
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\bin\Debug\Çalışma1.exe
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\bin\Debug\Çalışma1.pdb
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\obj\Debug\Çalışma1.csprojAssemblyReference.cache
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\obj\Debug\Çalışma1.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\obj\Debug\Çalışma1.exe
+D:\Visual Studio Projeler\Çalışma1\Çalışma1\obj\Debug\Çalışma1.pdb

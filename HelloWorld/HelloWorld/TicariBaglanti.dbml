@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DboTicariOtomasyon" Class="TicariBaglantiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\v13.1;Initial Catalog=DboTicariOtomasyon;Integrated Security=True" SettingsObjectName="HelloWorld.Properties.Settings" SettingsPropertyName="DboTicariOtomasyonConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_BANKALAR" Member="TBL_BANKALARs">
+    <Type Name="TBL_BANKALAR">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BANKAADI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SUBE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="IBAN" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="HESAPNO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="YETKILI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TARIH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="HESAPTURU" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_FATURABILGI" Member="TBL_FATURABILGIs">
+    <Type Name="TBL_FATURABILGI">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SERI" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="SIRANO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="TARIH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="SAAT" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="VERGIDAIRE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="ALICI" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TESLIMEDEN" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TESLIMALAN" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_FATURADETAY" Member="TBL_FATURADETAYs">
+    <Type Name="TBL_FATURADETAY">
+      <Column Name="FATURAURUNID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="URUNAD" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MIKTAR" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FIYAT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TUTAR" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="FATURAID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_ILCELER" Member="TBL_ILCELERs">
+    <Type Name="TBL_ILCELER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ILCE" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SEHIR" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_MUSTERILER" Member="TBL_MUSTERILERs">
+    <Type Name="TBL_MUSTERILER">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SOYAD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TELEFON" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TELEFON2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TC" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Column Name="MAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="IL" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ILCE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ADRES" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VERGIDAIRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_NOTLAR" Member="TBL_NOTLARs">
+    <Type Name="TBL_NOTLAR">
+      <Column Name="NOTID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOTTARIH" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NOTSAAT" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="NOTBASLIK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTDETAY" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="NOTOLUSTURAN" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_STOKLAR" Member="TBL_STOKLARs">
+    <Type Name="TBL_STOKLAR">
+      <Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STOKTUR" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="STOKADET" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_URUNLER" Member="TBL_URUNLERs">
+    <Type Name="TBL_URUNLER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="URUNAD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MARKA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MODEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="YIL" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="ADET" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ALISFIYAT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SATISFIYAT" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DETAY" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_KULLANICILAR" Member="TBL_KULLANICILARs">
+    <Type Name="TBL_KULLANICILAR">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_ILLER" Member="TBL_ILLERs">
+    <Type Name="TBL_ILLER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SEHIR" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_FIRMALAR" Member="TBL_FIRMALARs">
+    <Type Name="TBL_FIRMALAR">
+      <Column Name="ID" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AD" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="YETKILISTATU" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="YETKILIADSOYAD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TELEFON1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TELEFON2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TELEFON3" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="FAX" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IL" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ILCE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VERGIDAIRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ADRES" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YETKILITC" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Column Name="OZELKOD1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="OZELKOD2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="OZELKOD3" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SEKTOR" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_OZELKODLAR" Member="TBL_OZELKODLARs">
+    <Type Name="TBL_OZELKODLAR">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FIRMAKOD1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FIRMAKOD2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="FIRMAKOD3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_PERSONELLER" Member="TBL_PERSONELLERs">
+    <Type Name="TBL_PERSONELLER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AD" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SOYAD" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="TELEFON" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TC" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+      <Column Name="MAIL" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="IL" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ILCE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ADRES" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="GOREV" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_GIDERLER" Member="TBL_GIDERLERs">
+    <Type Name="TBL_GIDERLER">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ELEKTRIK" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SU" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DOGALGAZ" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="INTERNET" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="MAASLAR" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="EKSTRA" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NOTLAR" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="AY" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="YIL" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

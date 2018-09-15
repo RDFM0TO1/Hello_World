@@ -1,0 +1,7 @@
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\bin\Debug\Toplama İslemi.exe.config
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\bin\Debug\Toplama İslemi.exe
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\bin\Debug\Toplama İslemi.pdb
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\obj\Debug\Toplama İslemi.csprojAssemblyReference.cache
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\obj\Debug\Toplama İslemi.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\obj\Debug\Toplama İslemi.exe
+D:\Visual Studio Projeler\Toplama İslemi\Toplama İslemi\obj\Debug\Toplama İslemi.pdb

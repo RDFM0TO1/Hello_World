@@ -1,0 +1,14 @@
+D:\Visual Studio Projeler\Example2\Example2\obj\Debug\Example2.csprojAssemblyReference.cache
+D:\Visual Studio Projeler\Example2\Example2\obj\Debug\Example2.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projeler\Example2\Example2\bin\Debug\Example2.exe.config
+D:\Visual Studio Projeler\Example2\Example2\bin\Debug\Example2.exe
+D:\Visual Studio Projeler\Example2\Example2\bin\Debug\Example2.pdb
+D:\Visual Studio Projeler\Example2\Example2\obj\Debug\Example2.exe
+D:\Visual Studio Projeler\Example2\Example2\obj\Debug\Example2.pdb
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\bin\Debug\Example2.exe.config
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\bin\Debug\Example2.exe
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\bin\Debug\Example2.pdb
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\obj\Debug\Example2.csprojAssemblyReference.cache
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\obj\Debug\Example2.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\obj\Debug\Example2.exe
+D:\Visual Studio Projeler\ConsoleApp\Example2\Example2\obj\Debug\Example2.pdb

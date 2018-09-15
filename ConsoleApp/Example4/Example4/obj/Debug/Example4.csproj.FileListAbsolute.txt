@@ -1,0 +1,7 @@
+D:\Visual Studio Projeler\Example4\Example4\bin\Debug\Example4.exe.config
+D:\Visual Studio Projeler\Example4\Example4\bin\Debug\Example4.exe
+D:\Visual Studio Projeler\Example4\Example4\bin\Debug\Example4.pdb
+D:\Visual Studio Projeler\Example4\Example4\obj\Debug\Example4.csprojAssemblyReference.cache
+D:\Visual Studio Projeler\Example4\Example4\obj\Debug\Example4.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projeler\Example4\Example4\obj\Debug\Example4.exe
+D:\Visual Studio Projeler\Example4\Example4\obj\Debug\Example4.pdb
